@@ -21,7 +21,7 @@
 
         var createListStack = new StackCalculator(new ListStack(expression.Split(' ').Length));
         double resultList = StackCalculator.CalculateExpression(expression, ref errorCode);
-        return resultArray == 0 && errorCode == ErrorCodes.DIVISOR_ZERO;
+        return resultArray == 0 && resultList == 0 && errorCode == ErrorCodes.DIVISOR_ZERO;
     }
 
     static public bool Test()
