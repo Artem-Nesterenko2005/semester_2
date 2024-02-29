@@ -1,6 +1,6 @@
 ﻿class BWT
 {
-    public static void sort(char[,] array)
+    public static void Sort(char[,] array)
     {
         for (int i = 0; i < array.GetLength(1) - 1; i++)
         {
@@ -28,7 +28,7 @@
         }
     }
 
-    public static string convertBack(string convertedString, int position, string sortArray)
+    public static string ConvertBack(string convertedString, int position, string sortArray)
     {
         string result = "";
         for (int i = 0; i < convertedString.Length; ++i)
@@ -59,7 +59,7 @@
         return result;
     }
 
-    public static void fillArray(char[,] array, string expression)
+    public static void FillArray(char[,] array, string expression)
     {
         for (int i = 0; i < expression.Length; ++i)
         {
@@ -75,7 +75,7 @@
         }
     }
 
-    public static int checkPosition(string expression, char[,] array)
+    public static int CheckPosition(string expression, char[,] array)
     {
         int position = 0;
         for (int i = 0; i < expression.Length; ++i)
@@ -97,12 +97,12 @@
         return position;
     }
 
-    public static bool test()
+    public static bool Test()
     {
         string expression = "abacaba";
         char[,] array = new char[expression.Length, expression.Length];
-        fillArray(array, expression);
-        sort(array);
+        FillArray(array, expression);
+        Sort(array);
         string result = "";
         for (int i = 0; i < expression.Length; ++i)
         {
@@ -112,7 +112,7 @@
         {
             return false;
         }
-        int position = checkPosition(expression, array);
+        int position = CheckPosition(expression, array);
         if (position != 2)
         {
             return false;
@@ -122,7 +122,7 @@
         {
             sortingString += array[i, 0];
         }
-        return string.Equals(convertBack(result, position, sortingString), expression);
+        return string.Equals(ConvertBack(result, position, sortingString), expression);
     }
 }
 
@@ -130,13 +130,13 @@ class Program
 {
     public static void Main()
     {
-        if (!BWT.test())
+        if (!BWT.Test())
         {
             Console.WriteLine("Error test");
             return;
         }
         Console.Write("Enter the string ");
-        string expression = Console.ReadLine();
+        var expression = Console.ReadLine();
         if (expression == null)
         {
             Console.WriteLine("Empty string");
@@ -144,8 +144,8 @@ class Program
         }
 
         char[,] array = new char[expression.Length, expression.Length];
-        BWT.fillArray(array, expression);
-        BWT.sort(array);
+        BWT.FillArray(array, expression);
+        BWT.Sort(array);
 
         string result = "";
         for (int i = 0; i < expression.Length; ++i)
@@ -154,7 +154,7 @@ class Program
         }
         Console.WriteLine($"Converted string: {result}");
 
-        int position = BWT.checkPosition(expression, array);
+        int position = BWT.CheckPosition(expression, array);
         Console.WriteLine($"Original string position: {position}");
 
         string sortingString = "";
@@ -162,7 +162,7 @@ class Program
         {
             sortingString += array[i, 0];
         }
-        Console.Write($"Original string: {BWT.convertBack(result, position, sortingString)}");
+        Console.Write($"Original string: {BWT.ConvertBack(result, position, sortingString)}");
         return;
     }
 }
