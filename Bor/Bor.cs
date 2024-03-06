@@ -1,5 +1,4 @@
-﻿
-/// <summary>
+﻿/// <summary>
 ///data structure bor (prefix tree), with methods for adding strings, deleting strings, searching for strings, calculating the number of postfixes of a strings
 /// </summary>
 public class Bor
@@ -145,8 +144,7 @@ public class Bor
             auxiliaryDictionary = auxiliaryDictionary[element[i]].dictionary;
         }
 
-        if (//!auxiliaryDictionary[element[element.Length - 1]].dictionary.ContainsKey(element[element.Length - 1]) ||
-            !auxiliaryDictionary[element[element.Length - 1]].isTerminal)
+        if (!auxiliaryDictionary[element[element.Length - 1]].isTerminal)
         {
             return false;
         }
@@ -154,10 +152,10 @@ public class Bor
         if (auxiliaryDictionary[element[element.Length - 1]].isTerminal && auxiliaryDictionary[element[element.Length - 1]].dictionary.Count != 0)
         {
             auxiliaryDictionary[element[element.Length - 1]].isTerminal = false;
-            //return true;
         }
 
         RemoveString(element);
+        --size;
         return true;
     }
 

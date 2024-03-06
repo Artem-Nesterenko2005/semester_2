@@ -55,6 +55,7 @@ namespace TestBor
             Assert.IsTrue(testBor.Add("qwer"));
             Assert.IsFalse(testBor.Remove("qw"));
             Assert.IsTrue(testBor.Remove("qwe"));
+            Assert.IsFalse(testBor.Remove(""));
             Assert.IsTrue(testBor.Contains("qwer"));
             Assert.IsFalse(testBor.Contains("qwe"));
         }

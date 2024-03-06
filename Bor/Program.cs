@@ -15,12 +15,11 @@
             Console.WriteLine("Enter the command: ");
 
             userCommand = int.Parse(Console.ReadLine()!);
-            if (userCommand == 0)
-            {
-                break;
-            }
             switch (userCommand)
             {
+                case 0:
+                    break;
+
                 case 1:
                     Console.WriteLine("Enter the string");
                     expression = Console.ReadLine()!;
