@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "stackCalculator", "stackCalculator.csproj", "{6A115E54-17B9-42A4-B01A-B25779978847}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestStackCalculator", "..\TestStackCalculator\TestStackCalculator.csproj", "{A33C8075-678A-490E-9643-759B8F94F4D1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A115E54-17B9-42A4-B01A-B25779978847}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A115E54-17B9-42A4-B01A-B25779978847}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A115E54-17B9-42A4-B01A-B25779978847}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A115E54-17B9-42A4-B01A-B25779978847}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A33C8075-678A-490E-9643-759B8F94F4D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A33C8075-678A-490E-9643-759B8F94F4D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A33C8075-678A-490E-9643-759B8F94F4D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A33C8075-678A-490E-9643-759B8F94F4D1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5D59B4E8-D24E-4851-9126-6593E812FF33}
+	EndGlobalSection
+EndGlobal
