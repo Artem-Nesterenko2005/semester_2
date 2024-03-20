@@ -8,6 +8,6 @@
         uniqueList.AddUniqueList(5, 5);
         uniqueList.AddUniqueList(0, 0);
         uniqueList.Remove(2, 2);
-        uniqueList.ChangeByIndexUniqueList(3, 4);
+        uniqueList.ChangeByIndexUniqueList(0, 7);
     }
 }
