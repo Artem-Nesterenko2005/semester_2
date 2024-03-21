@@ -1,4 +1,7 @@
-﻿public class TestProgram
+﻿/// <summary>
+/// class with program test
+/// </summary>
+public class TestProgram
 {
     static private bool TestCase()
     {
@@ -24,6 +27,10 @@
         return resultArray == 0 && resultList == 0 && errorCode == ErrorCodes.DIVISOR_ZERO;
     }
 
+    /// <summary>
+    /// tests for a program
+    /// </summary>
+    /// <returns>result of the tests (true or false)</returns>
     static public bool Test()
     {
         return TestCase() && TestCaseDivisorNull();

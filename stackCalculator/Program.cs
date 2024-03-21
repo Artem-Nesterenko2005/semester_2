@@ -2,11 +2,6 @@
 {
     static void Main()
     {
-        if (!TestProgram.Test())
-        {
-            Console.WriteLine("Error test");
-            return;
-        }
         Console.WriteLine("Enter the expression:");
         var expression = Console.ReadLine();
         if (expression == null)
@@ -16,7 +11,7 @@
         }
         var errorCode = (ErrorCodes)0;
 
-        var createArrayStack= new StackCalculator(new ArrayStack(expression.Split(' ').Length));
+        var createArrayStack = new StackCalculator(new ArrayStack(expression.Split(' ').Length));
         double resultArray = StackCalculator.CalculateExpression(expression, ref errorCode);
         if (errorCode != ErrorCodes.OK_CODE)
         {

@@ -1,26 +1,26 @@
 ﻿/// <summary>
-/// first-in-last-out data structure based on a list.
+/// first-in-last-out data structure based on a array.
 /// </summary>
-public class ListStack : IStack
+public class ArrayStack : IStack
 {
-    /// <summary>
-    /// list for stack.
-    /// </summary>
-    private List<double> list;
-
     /// <summary>
     /// index of the element at the top of the stack.
     /// </summary>
     private int top;
 
     /// <summary>
-    /// create stack on an list with a given expression length in postfix form.
+    /// array for stack.
+    /// </summary>
+    private double[] array;
+
+    /// <summary>
+    /// create stack on an array with a given expression length in postfix form.
     /// </summary>
     /// <param name="length">length of the expression in postfix form.</param>
-    public ListStack(int length)
+    public ArrayStack(int length)
     {
         top = -1;
-        list = new List<double>(length);
+        array = new double[length];
     }
 
     /// <summary>
@@ -30,7 +30,7 @@ public class ListStack : IStack
     public void Push(double element)
     {
         ++top;
-        list.Add(element);
+        array[top] = element;
     }
 
     /// <summary>
@@ -39,10 +39,10 @@ public class ListStack : IStack
     /// <returns>element from the top of the stack.</returns>
     public double Pop()
     {
-        double element = list[top];
+        double result = array[top];
+        array[top] = 0;
         --top;
-        list.RemoveAt(list.Count - 1);
-        return element;
+        return result;
     }
 
     /// <summary>
@@ -51,6 +51,6 @@ public class ListStack : IStack
     /// <returns>returns true if the stack is empty.</returns>
     public bool IsEmpty()
     {
-        return list.Count == 0;
+        return top == -1;
     }
 }
