@@ -1,0 +1,14 @@
+C:\Users\Huawei\Desktop\2sem\ParseTree\bin\Debug\net8.0\ParseTree.exe
+C:\Users\Huawei\Desktop\2sem\ParseTree\bin\Debug\net8.0\ParseTree.deps.json
+C:\Users\Huawei\Desktop\2sem\ParseTree\bin\Debug\net8.0\ParseTree.runtimeconfig.json
+C:\Users\Huawei\Desktop\2sem\ParseTree\bin\Debug\net8.0\ParseTree.dll
+C:\Users\Huawei\Desktop\2sem\ParseTree\bin\Debug\net8.0\ParseTree.pdb
+C:\Users\Huawei\Desktop\2sem\ParseTree\obj\Debug\net8.0\ParseTree.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Huawei\Desktop\2sem\ParseTree\obj\Debug\net8.0\ParseTree.AssemblyInfoInputs.cache
+C:\Users\Huawei\Desktop\2sem\ParseTree\obj\Debug\net8.0\ParseTree.AssemblyInfo.cs
+C:\Users\Huawei\Desktop\2sem\ParseTree\obj\Debug\net8.0\ParseTree.csproj.CoreCompileInputs.cache
+C:\Users\Huawei\Desktop\2sem\ParseTree\obj\Debug\net8.0\ParseTree.dll
+C:\Users\Huawei\Desktop\2sem\ParseTree\obj\Debug\net8.0\refint\ParseTree.dll
+C:\Users\Huawei\Desktop\2sem\ParseTree\obj\Debug\net8.0\ParseTree.pdb
+C:\Users\Huawei\Desktop\2sem\ParseTree\obj\Debug\net8.0\ParseTree.genruntimeconfig.cache
+C:\Users\Huawei\Desktop\2sem\ParseTree\obj\Debug\net8.0\ref\ParseTree.dll
